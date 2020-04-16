@@ -1,0 +1,6 @@
+fio = input("Введите ФИО\n")
+fio_list = fio.split()
+for i, n in enumerate(fio_list, 1):
+    if len(n) > 10:
+        n = n [0:10]
+    print(f'{i}. {n}')
