@@ -1,0 +1,19 @@
+while True:
+    num = input('Сколько товаров Вы хотите добавить в каталог?\n')
+    if num.isdigit():
+        num = int(num)
+        break
+    else:
+        print('Ошибка ввода, введите целое число')
+n=1
+goods = tuple()
+my_list = []
+catalog = {}
+while n <= num:
+    goods =(n, {'Название': input("Введите название "), 'Цена': input("Введите цену "),
+                    'Количество': input('Введите количество '),'eд.': input("Введите единицу измерения ")})
+    n += 1
+    my_list.append(goods)
+    print(my_list)
+else:
+    print('Вы не указали ни одного товара')

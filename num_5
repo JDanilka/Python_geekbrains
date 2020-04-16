@@ -1,0 +1,22 @@
+while True:
+    num = input('Введите число\n')
+    if num.isdigit():
+        num = int(num)
+        break
+    else:
+        print('Ошибка ввода, введите число')
+list_1 = [100, 80, 60, 40, 20]
+n = list_1.count(num)
+for i in list_1:
+    if n > 0:
+        a = list_1.index(num)
+        print(list_1.insert(a+n, num))
+        break
+    else:
+        if num > i:
+            b = list_1.index(i)
+            print(list_1.insert(b, num))
+            break
+        elif num < list_1[len(list_1)-1]:
+            list_1.append(num)
+print(list_1)

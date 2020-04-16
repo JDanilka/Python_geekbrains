@@ -1,0 +1,17 @@
+name = input('Введите Ваше имя\n')
+name_list = list(name)
+if len(name_list) % 2 == 0:
+    i = 0
+    while i < len(name_list):
+        n = name_list[i]
+        name_list[i] = name_list[i+1]
+        name_list[i+1] = n
+        i += 2
+else:
+    i = 0
+    while i < len(name_list) - 1:
+        n = name_list[i]
+        name_list[i] = name_list[i+1]
+        name_list[i+1] = n
+        i += 2
+print(name_list)
