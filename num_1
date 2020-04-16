@@ -1,0 +1,9 @@
+a_int = 6
+a_float = 22.8
+a_str = 'cats'
+a_list = [10, 'books', 10.01]
+a_tuple = (11, 'elements', 1.3)
+a_dict = {'city_1':'Moscow', 'number':1}
+list_1 = [a_int, a_float, a_str, a_list, a_tuple, a_dict]
+for i in list_1:
+    print(f'{i} is {type(i)}')
